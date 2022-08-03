@@ -2,6 +2,7 @@ package cl.fsj.infoclub;
 
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 public class EjercicioTres {
 
@@ -21,8 +22,14 @@ public class EjercicioTres {
 
 		// filtrar elementos menores a 100
 
-		golosinas.entrySet().stream().filter(golosinas.get(golosinas) < 100).forEach(System.out::print);
+		Map<String, Integer> filtro = golosinas.entrySet().stream().filter(map -> map.getValue() < 100) // filtrado por
+																										// valores
+				.collect(Collectors.toMap(map -> map.getKey(), map -> map.getValue()));
 
+		System.out.println("Golosinas menores de 100: " + filtro);
+
+		
 	}
 
 }
+
