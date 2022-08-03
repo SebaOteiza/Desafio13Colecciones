@@ -50,6 +50,8 @@ public class EjercicioUno {
 		
 		marcas.remove("Carrefour");
 		
+		//agregar nuevas maras 
+		
 		ArrayList<String> posiblesMarcas = new ArrayList<>();
 		posiblesMarcas.add("LibreriaNacional");
 		posiblesMarcas.add("Mampato");
@@ -60,7 +62,7 @@ public class EjercicioUno {
 		System.out.println("*************");
 		
 		
-		//contar cúantos elemetos tiene el listado
+		//Contar cúantos elemetos tiene el listado
 		
 		System.out.println(marcas.size());
 		System.out.println("************");

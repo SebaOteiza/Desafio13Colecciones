@@ -15,7 +15,7 @@ public class EjercicioDos {
 			invitados.add("Facundo");
 			invitados.add("Pedro");
 			invitados.add("Jacinta");
-			invitados.add("FLorencia");
+			invitados.add("Florencia");
 			invitados.add("JuanPablo");
 			
 			System.out.println(invitados);
