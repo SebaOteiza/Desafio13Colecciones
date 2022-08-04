@@ -8,7 +8,7 @@ public class EjercicioTres {
 
 	public static void main(String[] args) {
 
-		Map<String, Integer> golosinas = new TreeMap();
+		Map<String, Integer> golosinas = new TreeMap(); //imprime ordenado de manera ordenada, alfabéticamente 
 
 		golosinas.put("Chocman", 100);
 		golosinas.put("Trululú", 100);
@@ -26,7 +26,7 @@ public class EjercicioTres {
 																										// valores
 				.collect(Collectors.toMap(map -> map.getKey(), map -> map.getValue()));
 
-		System.out.println("Golosinas menores de 100: " + filtro);
+		System.out.println("Golosinas menores de 100: " + filtro); //esto me imprime las golosinas que cuestan menos de $100 
 
 		
 	}
